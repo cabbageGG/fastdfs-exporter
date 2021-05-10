@@ -35,49 +35,49 @@ fastdfs_join_time = Gauge('fastdfs_join_time', "fastdfs_join_time", ['group', 's
 fastdfs_up_time = Gauge('fastdfs_up_time', "fastdfs_up_time", ['group', 'storage', 'ip', 'version'],
                         registry=REGISTRY)
 fastdfs_total_storage = Gauge('fastdfs_total_storage', "fastdfs_total_storage",
-                              ['group', 'storage', 'ip', 'version', 'last_source_date'],
+                              ['group', 'storage', 'ip', 'version'],
                               registry=REGISTRY)
 fastdfs_free_storage = Gauge('fastdfs_free_storage', "fastdfs_free_storage",
-                             ['group', 'storage', 'ip', 'version', 'last_source_date'],
+                             ['group', 'storage', 'ip', 'version'],
                              registry=REGISTRY)
 fastdfs_connection_alloc_count = Gauge('fastdfs_connection_alloc_count', "fastdfs_connection_alloc_count",
-                                       ['group', 'storage', 'ip', 'version', 'last_source_date'], registry=REGISTRY)
+                                       ['group', 'storage', 'ip', 'version'], registry=REGISTRY)
 fastdfs_connection_current_count = Gauge('fastdfs_connection_current_count', "fastdfs_connection_current_count",
-                                         ['group', 'storage', 'ip', 'version', 'last_source_date'], registry=REGISTRY)
+                                         ['group', 'storage', 'ip', 'version'], registry=REGISTRY)
 fastdfs_connection_max_count = Gauge('fastdfs_connection_max_count', "fastdfs_connection_max_count",
-                                     ['group', 'storage', 'ip', 'version', 'last_source_date'], registry=REGISTRY)
+                                     ['group', 'storage', 'ip', 'version'], registry=REGISTRY)
 fastdfs_total_upload_count = Gauge('fastdfs_total_upload_count', "fastdfs_total_upload_count",
-                                   ['group', 'storage', 'ip', 'version', 'last_source_date'], registry=REGISTRY)
+                                   ['group', 'storage', 'ip', 'version'], registry=REGISTRY)
 fastdfs_success_upload_count = Gauge('fastdfs_success_upload_count', "fastdfs_success_upload_count",
-                                     ['group', 'storage', 'ip', 'version', 'last_source_date'], registry=REGISTRY)
+                                     ['group', 'storage', 'ip', 'version'], registry=REGISTRY)
 fastdfs_total_delete_count = Gauge('fastdfs_total_delete_count', "fastdfs_total_delete_count",
-                                   ['group', 'storage', 'ip', 'version', 'last_source_date'], registry=REGISTRY)
+                                   ['group', 'storage', 'ip', 'version'], registry=REGISTRY)
 fastdfs_success_delete_count = Gauge('fastdfs_success_delete_count', "fastdfs_success_delete_count",
-                                     ['group', 'storage', 'ip', 'version', 'last_source_date'], registry=REGISTRY)
+                                     ['group', 'storage', 'ip', 'version'], registry=REGISTRY)
 fastdfs_total_download_count = Gauge('fastdfs_total_download_count', "fastdfs_total_download_count",
-                                     ['group', 'storage', 'ip', 'version', 'last_source_date'], registry=REGISTRY)
+                                     ['group', 'storage', 'ip', 'version'], registry=REGISTRY)
 fastdfs_success_download_count = Gauge('fastdfs_success_download_count', "fastdfs_success_download_count",
-                                       ['group', 'storage', 'ip', 'version', 'last_source_date'], registry=REGISTRY)
+                                       ['group', 'storage', 'ip', 'version'], registry=REGISTRY)
 fastdfs_total_upload_bytes = Gauge('fastdfs_total_upload_bytes', "fastdfs_total_upload_bytes",
-                                   ['group', 'storage', 'ip', 'version', 'last_source_date'], registry=REGISTRY)
+                                   ['group', 'storage', 'ip', 'version'], registry=REGISTRY)
 fastdfs_success_upload_bytes = Gauge('fastdfs_success_upload_bytes', "fastdfs_success_upload_bytes",
-                                     ['group', 'storage', 'ip', 'version', 'last_source_date'], registry=REGISTRY)
+                                     ['group', 'storage', 'ip', 'version'], registry=REGISTRY)
 fastdfs_total_download_bytes = Gauge('fastdfs_total_download_bytes', "fastdfs_total_download_bytes",
-                                     ['group', 'storage', 'ip', 'version', 'last_source_date'], registry=REGISTRY)
+                                     ['group', 'storage', 'ip', 'version'], registry=REGISTRY)
 fastdfs_success_download_bytes = Gauge('fastdfs_success_download_bytes', "fastdfs_success_download_bytes",
-                                       ['group', 'storage', 'ip', 'version', 'last_source_date'], registry=REGISTRY)
+                                       ['group', 'storage', 'ip', 'version'], registry=REGISTRY)
 fastdfs_total_file_open_count = Gauge('fastdfs_total_file_open_count', "fastdfs_total_file_open_count",
-                                      ['group', 'storage', 'ip', 'version', 'last_source_date'], registry=REGISTRY)
+                                      ['group', 'storage', 'ip', 'version'], registry=REGISTRY)
 fastdfs_success_file_open_count = Gauge('fastdfs_success_file_open_count', "fastdfs_success_file_open_count",
-                                        ['group', 'storage', 'ip', 'version', 'last_source_date'], registry=REGISTRY)
+                                        ['group', 'storage', 'ip', 'version'], registry=REGISTRY)
 fastdfs_total_file_read_count = Gauge('fastdfs_total_file_read_count', "fastdfs_total_file_read_count",
-                                      ['group', 'storage', 'ip', 'version', 'last_source_date'], registry=REGISTRY)
+                                      ['group', 'storage', 'ip', 'version'], registry=REGISTRY)
 fastdfs_success_file_read_count = Gauge('fastdfs_success_file_read_count', "fastdfs_success_file_read_count",
-                                        ['group', 'storage', 'ip', 'version', 'last_source_date'], registry=REGISTRY)
+                                        ['group', 'storage', 'ip', 'version'], registry=REGISTRY)
 fastdfs_total_file_write_count = Gauge('fastdfs_total_file_write_count', "fastdfs_total_file_write_count",
-                                       ['group', 'storage', 'ip', 'version', 'last_source_date'], registry=REGISTRY)
+                                       ['group', 'storage', 'ip', 'version'], registry=REGISTRY)
 fastdfs_success_file_write_count = Gauge('fastdfs_success_file_write_count', "fastdfs_success_file_write_count",
-                                         ['group', 'storage', 'ip', 'version', 'last_source_date'], registry=REGISTRY)
+                                         ['group', 'storage', 'ip', 'version'], registry=REGISTRY)
 
 # 定义tracker/group/storage数据存储字典
 trackerServer = dict()
@@ -246,7 +246,6 @@ def set_storage():
         fastdfs_disk_total_space.labels(group=group_name).set(group['disk total space'])
         fastdfs_disk_free_space.labels(group=group_name).set(group['disk free space'])
         for storage in group['storage']:
-            last_source_date = datetime.datetime.fromtimestamp(storage['last_source_update']).strftime("%Y-%m-%d")
             storage_name = storage['storage_name']
             version = storage['version']
             ip = storage['id']
@@ -261,57 +260,57 @@ def set_storage():
                     storage['up time'])
             else:
                 fastdfs_up_time.labels(group=group_name, storage=storage_name, ip=ip, version=version).set(0)
-            fastdfs_connection_alloc_count.labels(group=group_name, storage=storage_name, ip=ip, version=version,
-                                                  last_source_date=last_source_date).set(
+            fastdfs_connection_alloc_count.labels(group=group_name, storage=storage_name, ip=ip, version=version
+                                                  ).set(
                 storage['connection.alloc_count'])
-            fastdfs_connection_current_count.labels(group=group_name, storage=storage_name, ip=ip, version=version,
-                                                    last_source_date=last_source_date).set(
+            fastdfs_connection_current_count.labels(group=group_name, storage=storage_name, ip=ip, version=version
+                                                    ).set(
                 storage['connection.current_count'])
-            fastdfs_connection_max_count.labels(group=group_name, storage=storage_name, ip=ip, version=version,
-                                                last_source_date=last_source_date).set(storage['connection.max_count'])
-            fastdfs_total_storage.labels(group=group_name, storage=storage_name, ip=ip, version=version,
-                                         last_source_date=last_source_date).set(storage['total storage'])
-            fastdfs_free_storage.labels(group=group_name, storage=storage_name, ip=ip, version=version,
-                                        last_source_date=last_source_date).set(storage['free storage'])
-            fastdfs_total_upload_count.labels(group=group_name, storage=storage_name, ip=ip, version=version,
-                                              last_source_date=last_source_date).set(storage['total_upload_count'])
-            fastdfs_success_upload_count.labels(group=group_name, storage=storage_name, ip=ip, version=version,
-                                                last_source_date=last_source_date).set(storage['success_upload_count'])
-            fastdfs_total_delete_count.labels(group=group_name, storage=storage_name, ip=ip, version=version,
-                                              last_source_date=last_source_date).set(storage['total_delete_count'])
-            fastdfs_success_delete_count.labels(group=group_name, storage=storage_name, ip=ip, version=version,
-                                                last_source_date=last_source_date).set(storage['success_delete_count'])
-            fastdfs_total_download_count.labels(group=group_name, storage=storage_name, ip=ip, version=version,
-                                                last_source_date=last_source_date).set(storage['total_download_count'])
-            fastdfs_success_download_count.labels(group=group_name, storage=storage_name, ip=ip, version=version,
-                                                  last_source_date=last_source_date).set(
+            fastdfs_connection_max_count.labels(group=group_name, storage=storage_name, ip=ip, version=version
+                                                ).set(storage['connection.max_count'])
+            fastdfs_total_storage.labels(group=group_name, storage=storage_name, ip=ip, version=version
+                                         ).set(storage['total storage'])
+            fastdfs_free_storage.labels(group=group_name, storage=storage_name, ip=ip, version=version
+                                        ).set(storage['free storage'])
+            fastdfs_total_upload_count.labels(group=group_name, storage=storage_name, ip=ip, version=version
+                                              ).set(storage['total_upload_count'])
+            fastdfs_success_upload_count.labels(group=group_name, storage=storage_name, ip=ip, version=version
+                                                ).set(storage['success_upload_count'])
+            fastdfs_total_delete_count.labels(group=group_name, storage=storage_name, ip=ip, version=version
+                                              ).set(storage['total_delete_count'])
+            fastdfs_success_delete_count.labels(group=group_name, storage=storage_name, ip=ip, version=version
+                                                ).set(storage['success_delete_count'])
+            fastdfs_total_download_count.labels(group=group_name, storage=storage_name, ip=ip, version=version
+                                                ).set(storage['total_download_count'])
+            fastdfs_success_download_count.labels(group=group_name, storage=storage_name, ip=ip, version=version
+                                                  ).set(
                 storage['success_download_count'])
-            fastdfs_total_upload_bytes.labels(group=group_name, storage=storage_name, ip=ip, version=version,
-                                              last_source_date=last_source_date).set(storage['total_upload_bytes'])
-            fastdfs_success_upload_bytes.labels(group=group_name, storage=storage_name, ip=ip, version=version,
-                                                last_source_date=last_source_date).set(storage['success_upload_bytes'])
-            fastdfs_total_download_bytes.labels(group=group_name, storage=storage_name, ip=ip, version=version,
-                                                last_source_date=last_source_date).set(storage['stotal_download_bytes'])
-            fastdfs_success_download_bytes.labels(group=group_name, storage=storage_name, ip=ip, version=version,
-                                                  last_source_date=last_source_date).set(
+            fastdfs_total_upload_bytes.labels(group=group_name, storage=storage_name, ip=ip, version=version
+                                              ).set(storage['total_upload_bytes'])
+            fastdfs_success_upload_bytes.labels(group=group_name, storage=storage_name, ip=ip, version=version
+                                                ).set(storage['success_upload_bytes'])
+            fastdfs_total_download_bytes.labels(group=group_name, storage=storage_name, ip=ip, version=version
+                                                ).set(storage['stotal_download_bytes'])
+            fastdfs_success_download_bytes.labels(group=group_name, storage=storage_name, ip=ip, version=version
+                                                  ).set(
                 storage['success_download_bytes'])
-            fastdfs_total_file_open_count.labels(group=group_name, storage=storage_name, ip=ip, version=version,
-                                                 last_source_date=last_source_date).set(
+            fastdfs_total_file_open_count.labels(group=group_name, storage=storage_name, ip=ip, version=version
+                                                 ).set(
                 storage['total_file_open_count'])
-            fastdfs_success_file_open_count.labels(group=group_name, storage=storage_name, ip=ip, version=version,
-                                                   last_source_date=last_source_date).set(
+            fastdfs_success_file_open_count.labels(group=group_name, storage=storage_name, ip=ip, version=version
+                                                   ).set(
                 storage['success_file_open_count'])
-            fastdfs_total_file_read_count.labels(group=group_name, storage=storage_name, ip=ip, version=version,
-                                                 last_source_date=last_source_date).set(
+            fastdfs_total_file_read_count.labels(group=group_name, storage=storage_name, ip=ip, version=version
+                                                 ).set(
                 storage['total_file_read_count'])
-            fastdfs_success_file_read_count.labels(group=group_name, storage=storage_name, ip=ip, version=version,
-                                                   last_source_date=last_source_date).set(
+            fastdfs_success_file_read_count.labels(group=group_name, storage=storage_name, ip=ip, version=version
+                                                   ).set(
                 storage['success_file_read_count'])
-            fastdfs_total_file_write_count.labels(group=group_name, storage=storage_name, ip=ip, version=version,
-                                                  last_source_date=last_source_date).set(
+            fastdfs_total_file_write_count.labels(group=group_name, storage=storage_name, ip=ip, version=version
+                                                  ).set(
                 storage['total_file_write_count'])
-            fastdfs_success_file_write_count.labels(group=group_name, storage=storage_name, ip=ip, version=version,
-                                                    last_source_date=last_source_date).set(
+            fastdfs_success_file_write_count.labels(group=group_name, storage=storage_name, ip=ip, version=version
+                                                    ).set(
                 storage['success_file_write_count'])
 
 

@@ -7,12 +7,10 @@ RUN apk add git \
   && cd /srv &&  git clone https://github.com/happyfish100/fastdfs.git \
   && cd fastdfs; git checkout V6.06
 
-FROM ubuntu
-LABEL maintainer="1045002003@qq.com"
+FROM ubuntu:20.04
 
 COPY --from=git /srv /srv
 COPY requirements.txt /tmp/requirements.txt
-COPY . /opt/
 
 RUN apt-get update -y \
   && apt-get install gcc make -y \
@@ -26,6 +24,8 @@ RUN apt-get update -y \
   && pip3 install -r /tmp/requirements.txt \
   && apt-get clean \
   && rm -rf /srv
+ 
+COPY src /opt/src
 
 WORKDIR /opt
 EXPOSE 9018
